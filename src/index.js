@@ -1,5 +1,5 @@
 function showAnswer(response) {
-  alert(response.data.answer);
+  console.log(response.data.answer);
 }
 
 let apiKey = "t8afd90435a4767d2a3fo6db06469dbc";
