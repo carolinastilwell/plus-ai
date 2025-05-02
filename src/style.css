@@ -22,11 +22,14 @@ h1 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
+  margin-left: 30px;
 }
 
 form {
   padding: 30px;
+  padding-top: 0;
+  text-align: center;
 }
 
 .userInput {
@@ -55,7 +58,7 @@ form {
 }
 .answer {
   background-color: #f0f4f8;
-  width: 90%;
+  width: 80%;
   border-radius: 8px;
   padding: 10px;
   margin: auto;
