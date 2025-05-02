@@ -25,6 +25,10 @@ p {
   font-size: 14px;
   margin-left: 50px;
 }
+p small {
+  color: grey;
+  font-size: 10px;
+}
 
 form {
   padding: 30px;
@@ -56,6 +60,11 @@ form {
   background: #1366d6;
   cursor: pointer;
 }
+
+.hidden {
+  display: none;
+}
+
 .answer {
   background-color: #f0f4f8;
   width: 80%;
