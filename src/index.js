@@ -1,10 +1,12 @@
-function showAnswer(response) {
-  console.log(response.data.answer);
+function generateAnswer(event) {
+  event.preventDefault();
+
+  new Typewriter("#answer", {
+    strings: "The answer here",
+    autoStart: true,
+    cursor: "",
+  });
 }
 
-let apiKey = "t8afd90435a4767d2a3fo6db06469dbc";
-let context = "be polite and provide a concise anwer";
-let prompt = "Who was the first female president?";
-let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-
-axios.get(apiUrl).then(showAnswer);
+let formElement = document.querySelector("#form");
+formElement.addEventListener("submit", generateAnswer);
